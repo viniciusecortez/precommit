@@ -1,0 +1,9 @@
+#!/bin/bash
+export test_command=$(git config user.test)
+
+
+if [ ! -z "$test_command" ] ; then
+    eval "$test_command"
+else 
+    echo -e "\nNão implementado"
+fi
